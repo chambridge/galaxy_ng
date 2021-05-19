@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.conf.urls import url
 from django.urls import include, path
 
 from galaxy_ng.app.api import urls as api_urls
@@ -23,6 +24,7 @@ urlpatterns = [
     path("", include(ui_urls)),
     path("", include("django_prometheus.urls")),
     path(settings.ADMIN_SITE_URL, admin.site.urls),
+    url("", include("social_django.urls", namespace="social")),
 ]
 
 urlpatterns.append(

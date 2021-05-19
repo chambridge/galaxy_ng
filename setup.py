@@ -84,6 +84,9 @@ requirements = [
     "django-prometheus>=2.0.0",
     "drf-spectacular",
     "pulp-container>=2.5.2",
+    "social-auth-core==3.3.1",
+    "social-auth-app-django==3.1.0",
+    "python3-saml==1.2.3",
 ]
 
 
